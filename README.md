@@ -1,5 +1,5 @@
 
-"encoding/json"的天坑
+"encoding/json"
  //json反序列化的天坑，坑死老娘了
  
  type DataType struct {
