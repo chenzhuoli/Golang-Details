@@ -8,7 +8,7 @@ import (
 
 func genOutputWrong(inputIDs []int32) []*int32 {
 	outputIDs := make([]*int32, 0, len(inputIDs))
-	for _, id := range inputIDs { //用元素本身
+	for _, id := range inputIDs { //用元素本身, 只有最后一个元素赋值生效
 		//fmt.Println(id)
 		outputIDs = append(outputIDs, &id)
 	}
@@ -17,7 +17,7 @@ func genOutputWrong(inputIDs []int32) []*int32 {
 
 func genOutputCorrect(inputIDs []int32) []*int32 {
 	outputIDs := make([]*int32, 0, len(inputIDs))
-	for i, _ := range inputIDs { //用下标
+	for i, _ := range inputIDs { //用下标, 每一个元素的赋值都生效
 		//fmt.Println(inputIDs[i])
 		outputIDs = append(outputIDs, &inputIDs[i])
 	}
